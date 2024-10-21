@@ -1,44 +1,76 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333;
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
+:raiz {
+    --bg-color: #222831;
+    --cor-primária: #DDDDDD;
+    --cor-secundária: #F05454;
+    --font: "Nunito Sans", sem serifa;
 }
 
-body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+corpo {
+    cor de fundo: var(--cor-de-fundo);
+    cor: var(--cor-primária);
+    família de fontes: var(--fonte);
+    altura: 100vh;
+    margem: 0;
 }
 
-.caixa-principal{
-    background-color: var(--cor-principal);
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
+cabeçalho {
+    cor de fundo: var(--cor-primária);
+    alinhamento de texto: centralizar;
+    preenchimento: 1px;
 }
 
-h1{
-    color: var(--cor-destaque);
+h1 {
+    tamanho da fonte: 2rem;
+    cor: var(--bg-color);
+    espessura da fonte: 700;
+}
+navegação {
+    exibição: flexível;
+    justificar-conteúdo: centro;
+    espessura da fonte: 400;
 }
 
-button {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-
-    padding: 15px;
-    transition: background-color 0.3s;
+navegar para {
+    decoração de texto: nenhuma;
+    cor: var(--bg-color);
+    margem: 0 2rem 1rem 0rem;
+    tamanho da fonte: 1.2rem;
 }
 
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+navegação a:hover {
+    decoração de texto: sublinhado;
+    transformar: escala(0,90);
+    transição: transformação 0,1s;
 }
+
+.graficos-container {
+    margem: 5rem;
+}
+
+.gráfico {
+    margem superior: 3rem;
+}
+
+.graficos-container__texto {
+    tamanho da fonte: 1.3rem;
+    alinhamento de texto: centralizar;
+    preenchimento: 2rem;
+    borda: var(--cor-secundária) sólido 2px;
+}
+
+extensão {
+    espessura da fonte: negrito;
+    cor: var(--cor-secundária);
+}
+
+rodapé {
+    exibição: flexível;
+    alinhar-itens: centralizar;
+    justificar-conteúdo: centro;
+    cor de fundo: var(--cor-primária);
+    cor: var(--bg-color);
+    largura: 100%;
+    altura: 3rem;
+    margem superior: 2rem;
